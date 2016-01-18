@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="product" extends="struts-dsyg" namespace="/product">
+
+		<action name="delProductAction" class="product01Action" method="delProductAction">
+			<result name="success">/page/product/productlist.jsp</result>
+			<result name="checkerror">/page/product/productlist.jsp</result>
+		</action>
+		
+		<action name="showUpdProductAction" class="product01Action" method="showUpdProductAction">
+			<result name="success">/page/product/updateproduct.jsp</result>
+		</action>
+		
+		<action name="updProductAction" class="product01Action" method="updProductAction">
+			<result name="success">/page/product/updateproduct.jsp</result>
+			<result name="checkerror">/page/product/updateproduct.jsp</result>
+		</action>
+		
+		<action name="showAddProductAction" class="product01Action" method="showAddProductAction">
+			<result name="success">/page/product/addproduct.jsp</result>
+		</action>
+		
+		<action name="addProductAction" class="product01Action" method="addProductAction">
+			<result name="success">/page/product/addproduct.jsp</result>
+			<result name="checkerror">/page/product/addproduct.jsp</result>
+		</action>
+	
+		<action name="showManageProductListAction" class="product01Action" method="showManageProductListAction">
+			<result name="success">/page/product/productlist.jsp</result>
+		</action>
+		
+		<action name="queryManageProductAction" class="product01Action" method="queryManageProductAction">
+			<result name="success">/page/product/productlist.jsp</result>
+		</action>
+		
+		<action name="turnManageProductAction" class="product01Action" method="turnManageProductAction">
+			<result name="success">/page/product/productlist.jsp</result>
+		</action>
+		
+	</package>
+
+</struts>

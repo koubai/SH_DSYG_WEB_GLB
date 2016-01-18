@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	
+	<!-- recruit -->
+	<bean id="recruitAction" class="com.cn.dsyg.action.RecruitAction" scope="session">
+		<property name="recruitService">
+			<ref bean="recruitService"/>
+		</property>
+	</bean>
+	
+	<!-- case -->
+	<bean id="caseAction" class="com.cn.dsyg.action.CaseAction" scope="session">
+		<property name="caseService">
+			<ref bean="caseService"/>
+		</property>
+		<property name="dict01Service">
+			<ref bean="dict01Service"/>
+		</property>
+	</bean>
+	
+	<!-- QA -->
+	<bean id="qaAction" class="com.cn.dsyg.action.QaAction" scope="session">
+		<property name="qaService">
+			<ref bean="qaService"/>
+		</property>
+	</bean>
+	
+	<!-- warehouse -->
+	<bean id="warehouseAction" class="com.cn.dsyg.action.WarehouseAction" scope="session">
+		<property name="dict01Service">
+			<ref bean="dict01Service"/>
+		</property>
+		<property name="warehouseService">
+			<ref bean="warehouseService"/>
+		</property>
+		<property name="product01Service">
+			<ref bean="product01Service"/>
+		</property>
+	</bean>
+	
+	<!-- search -->
+	<bean id="searchAction" class="com.cn.dsyg.action.SearchAction" scope="request">
+		<property name="dict01Service">
+			<ref bean="dict01Service"/>
+		</property>
+		<property name="product01Service">
+			<ref bean="product01Service"/>
+		</property>
+	</bean>
+	
+	<!-- search warehouse -->
+	<bean id="warehouseSearchAction" class="com.cn.dsyg.action.WarehouseSearchAction" scope="request">
+		<property name="dict01Service">
+			<ref bean="dict01Service"/>
+		</property>
+		<property name="warehouseService">
+			<ref bean="warehouseService"/>
+		</property>
+	</bean>
+
+	<!-- news -->
+	<bean id="newsAction" class="com.cn.dsyg.action.NewsAction" scope="session">
+		<property name="newsService">
+			<ref bean="newsService"/>
+		</property>
+	</bean>
+	
+	<!-- product01 -->
+	<bean id="product01Action" class="com.cn.dsyg.action.Product01Action" scope="session">
+		<property name="dict01Service">
+			<ref bean="dict01Service"/>
+		</property>
+		<property name="product01Service">
+			<ref bean="product01Service"/>
+		</property>
+	</bean>
+
+	<!-- 首页 -->
+	<bean id="homeAction" class="com.cn.dsyg.action.HomeAction" scope="session">
+		<property name="dict01Service">
+			<ref bean="dict01Service"/>
+		</property>
+		<property name="newsService">
+			<ref bean="newsService"/>
+		</property>
+		<property name="qaService">
+			<ref bean="qaService"/>
+		</property>
+		<property name="recruitService">
+			<ref bean="recruitService"/>
+		</property>
+		<property name="caseService">
+			<ref bean="caseService"/>
+		</property>
+	</bean>
+	
+	<!-- 后台管理菜单页面 -->
+	<bean id="manageHomeAction" class="com.cn.dsyg.action.ManageHomeAction" scope="session">
+	</bean>
+	
+	<!-- 管理员登录 -->
+	<bean id="manageLoginAction" class="com.cn.dsyg.action.ManageLoginAction" scope="session">
+		<property name="userService">
+			<ref bean="userService"/>
+		</property>
+		<property name="roleService">
+			<ref bean="roleService"/>
+		</property>
+	</bean>
+	
+	<!-- 用户 -->
+	<bean id="userAction" class="com.cn.dsyg.action.UserAction" scope="session">
+		<property name="userService">
+			<ref bean="userService"/>
+		</property>
+		<property name="roleService">
+			<ref bean="roleService"/>
+		</property>
+	</bean>
+	
+	<!-- 验证码 -->
+	<bean id="randomActionBean" class="com.cn.dsyg.action.ValidateCodeAction" />
+	
+	<!-- 登录拦截器 -->
+	<bean id="loginInterceptorBean" class="com.cn.dsyg.interceptor.LoginInterceptor"/>
+	
+	<!-- 多语言拦截器 -->
+	<bean id="languageInterceptorBean" class="com.cn.dsyg.interceptor.LanguageInterceptor"/>
+
+</beans>

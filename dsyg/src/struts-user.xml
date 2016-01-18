@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="user" extends="struts-dsyg" namespace="/user">
+	
+		<action name="showUpdPasswordAction" class="userAction" method="showUpdPasswordAction">
+			<result name="success">/page/user/updpsd.jsp</result>
+		</action>
+		
+		<action name="updPasswordAction" class="userAction" method="updPasswordAction">
+			<result name="success">/page/user/updpsd.jsp</result>
+			<result name="checkerror">/page/user/updpsd.jsp</result>
+		</action>
+		
+		<action name="showUserManagePageAction" class="userAction" method="showUserManagePageAction">
+			<result name="success">/page/user/userlist.jsp</result>
+		</action>
+		
+		<action name="queryUserAction" class="userAction" method="queryUserAction">
+			<result name="success">/page/user/userlist.jsp</result>
+		</action>
+		
+		<action name="turnUserAction" class="userAction" method="turnUserAction">
+			<result name="success">/page/user/userlist.jsp</result>
+		</action>
+		
+		<action name="showAddUserAction" class="userAction" method="showAddUserAction">
+			<result name="success">/page/user/adduser.jsp</result>
+		</action>
+		
+		<action name="addUserAction" class="userAction" method="addUserAction">
+			<result name="success">/page/user/adduser.jsp</result>
+			<result name="checkerror">/page/user/adduser.jsp</result>
+		</action>
+		
+		<action name="showUpdUserAction" class="userAction" method="showUpdUserAction">
+			<result name="success">/page/user/upduser.jsp</result>
+		</action>
+		
+		<action name="updUserAction" class="userAction" method="updUserAction">
+			<result name="success">/page/user/upduser.jsp</result>
+			<result name="checkerror">/page/user/upduser.jsp</result>
+		</action>
+		
+		<action name="delUserAction" class="userAction" method="delUserAction">
+			<result name="*">/page/user/userlist.jsp</result>
+		</action>
+		
+	</package>
+
+</struts>

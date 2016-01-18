@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="home" extends="struts-language" namespace="/home">
+	
+		<action name="showCompanyRecruitAction" class="homeAction" method="showCompanyRecruitAction">
+			<result name="success">/page/home/companyrecruit.jsp</result>
+		</action>
+		
+		<action name="showRecruitDetailAction" class="homeAction" method="showRecruitDetailAction">
+			<result name="success">/page/home/companyrecruitdetail.jsp</result>
+		</action>
+		
+		<action name="showHomeCaseDetailAction" class="homeAction" method="showHomeCaseDetailAction">
+			<result name="success">/page/home/casedetail.jsp</result>
+		</action>
+		
+		<action name="showHomeCaseAction" class="homeAction" method="showHomeCaseAction">
+			<result name="success">/page/home/case.jsp</result>
+		</action>
+		
+		<action name="showQaAction" class="homeAction" method="showQaAction">
+			<result name="success">/page/home/addqa.jsp</result>
+		</action>
+		
+		<action name="addQaAction" class="homeAction" method="addQaAction">
+			<result name="success">/page/home/addqa.jsp</result>
+			<result name="checkerror">/page/home/addqa.jsp</result>
+		</action>
+		
+		<action name="goHomeAction" class="homeAction" method="goHomeAction">
+			<result name="success">/page/home/home.jsp</result>
+		</action>
+		
+		<action name="showPdfAction" class="homeAction" method="showPdfAction">
+			<result name="success">/page/home/pdfdetail.jsp</result>
+		</action>
+		
+		<action name="showOnlineAction" class="homeAction" method="showOnlineAction">
+			<result name="success">/page/home/online.jsp</result>
+		</action>
+		
+		<action name="showCompanyInfoAction" class="homeAction" method="showCompanyInfoAction">
+			<result name="success">/page/home/companyinfo.jsp</result>
+		</action>
+		
+		<action name="showCompanyDistributionAction" class="homeAction" method="showCompanyDistributionAction">
+			<result name="success">/page/home/distribution.jsp</result>
+		</action>
+		
+		<action name="showCompanyHistoryAction" class="homeAction" method="showCompanyHistoryAction">
+			<result name="success">/page/home/history.jsp</result>
+		</action>
+		
+		<action name="showCompanySpeechAction" class="homeAction" method="showCompanySpeechAction">
+			<result name="success">/page/home/speech.jsp</result>
+		</action>
+		
+		<action name="showCompanyNewAction" class="homeAction" method="showCompanyNewAction">
+			<result name="success">/page/home/companynews.jsp</result>
+		</action>
+		
+		<action name="showNewsDetailAction" class="homeAction" method="showNewsDetailAction">
+			<result name="success">/page/home/newsdetail.jsp</result>
+		</action>
+		
+		<!-- 相关技术情报 -->
+		<action name="showInformationAction" class="homeAction" method="showInformationAction">
+			<result name="success">/page/information/infomation.jsp</result>
+		</action>
+		
+		<action name="showInformationDetail1Action" class="homeAction" method="showInformationDetail1Action">
+			<result name="success">/page/information/infomation_detail1.jsp</result>
+		</action>
+		
+		<action name="showInformationDetail2Action" class="homeAction" method="showInformationDetail2Action">
+			<result name="success">/page/information/infomation_detail2.jsp</result>
+		</action>
+		
+		<action name="showInformationDetail3Action" class="homeAction" method="showInformationDetail3Action">
+			<result name="success">/page/information/infomation_detail3.jsp</result>
+		</action>
+		
+		<action name="showInformationDetail4Action" class="homeAction" method="showInformationDetail4Action">
+			<result name="success">/page/information/infomation_detail4.jsp</result>
+		</action>
+		
+		<action name="showInformationDetail5Action" class="homeAction" method="showInformationDetail5Action">
+			<result name="success">/page/information/infomation_detail5.jsp</result>
+		</action>
+		
+		<action name="showInformationDetail6Action" class="homeAction" method="showInformationDetail6Action">
+			<result name="success">/page/information/infomation_detail6.jsp</result>
+		</action>
+		
+	</package>
+
+</struts>

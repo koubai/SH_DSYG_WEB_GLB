@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="manage" extends="struts-language" namespace="/manage">
+	
+		<action name="showManageLoginAction" class="manageLoginAction" method="showManageLoginAction">
+			<result name="*">/page/manage/login.jsp</result>
+		</action>
+		
+		<action name="manageLoginAction" class="manageLoginAction" method="manageLoginAction">
+			<result name="success">/page/manage/managehome.jsp</result>
+			<result name="error">/page/manage/login.jsp</result>
+		</action>
+		
+		<action name="manageLogoutAction" class="manageLoginAction" method="manageLogoutAction">
+			<result name="*">/page/manage/login.jsp</result>
+		</action>
+		
+	</package>
+
+</struts>

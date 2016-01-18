@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="qa" extends="struts-dsyg" namespace="/qa">
+		
+		<action name="delQaAction" class="qaAction" method="delQaAction">
+			<result name="success">/page/qa/qalist.jsp</result>
+		</action>
+		
+		<action name="showQaAction" class="qaAction" method="showQaAction">
+			<result name="success">/page/qa/qalist.jsp</result>
+		</action>
+		
+		<action name="queryQaAction" class="qaAction" method="queryQaAction">
+			<result name="success">/page/qa/qalist.jsp</result>
+		</action>
+		
+		<action name="turnQaAction" class="qaAction" method="turnQaAction">
+			<result name="success">/page/qa/qalist.jsp</result>
+		</action>
+		
+	</package>
+
+</struts>

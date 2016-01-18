@@ -1,0 +1,19 @@
+/* CSS Document */
+@charset "utf-8";
+html{background:#eeeeee}
+body{background:#eeeeee;font:12px/20px "微软雅黑",Arial}
+a{color:#2965b1;text-decoration:none}
+ul{ margin:0; padding:0;}
+img,input{ vertical-align:middle;}
+.clear_l{ clear:left;}
+.main_body{width:1000px;margin:0 auto; border-top:5px solid #4ba0d7;background:#ffffff; padding-bottom:80px;}
+.btn{border:0 none;border-radius:3px;color:#fff;cursor:pointer;display:inline-block;height:30px; padding:0 25px;text-align:center;*display:inline;*zoom:1;vertical-align:middle}
+.btn-blue{background:#4ba0d7}
+.btn-blue:hover{background:#2f8ded}
+.btn-gray{background:#dcdcdc; color:#666666; margin-left:5px;}
+.date_input{ border:1px solid #cccccc; width:170px; line-height:14px;}
+.date_input input{ border:none;}
+.date_input img{ margin:2px;}
+.menu_tab{ margin:0 auto; margin-top:50px;}
+.menu_tab a{ width:300px; height:60px; line-height:60px; display:block; background:#4ba0d7; color:#ffffff; font-size:16px; font-family:"微软雅黑"; text-align:center; font-weight:600; border-radius:5px;}
+.menu_tab a:hover{background:#2f8ded;}

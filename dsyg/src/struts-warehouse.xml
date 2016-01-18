@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="warehouse" extends="struts-dsyg" namespace="/warehouse">
+		
+		
+		<action name="showUpdWarehouseAction" class="warehouseAction" method="showUpdWarehouseAction">
+			<result name="success">/page/warehouse/updwarehouse.jsp</result>
+		</action>
+		
+		<action name="updWarehouseAction" class="warehouseAction" method="updWarehouseAction">
+			<result name="success">/page/warehouse/updwarehouse.jsp</result>
+		</action>
+		
+		<action name="delWarehouseAction" class="warehouseAction" method="delWarehouseAction">
+			<result name="success">/page/warehouse/warehouselist.jsp</result>
+		</action>
+		
+		<action name="showAddWarehouseAction" class="warehouseAction" method="showAddWarehouseAction">
+			<result name="success">/page/warehouse/addwarehouse.jsp</result>
+		</action>
+		
+		<action name="addWarehouseAction" class="warehouseAction" method="addWarehouseAction">
+			<result name="success">/page/warehouse/addwarehouse.jsp</result>
+		</action>
+	
+		<action name="showWarehouseManageAction" class="warehouseAction" method="showWarehouseManageAction">
+			<result name="success">/page/warehouse/warehouselist.jsp</result>
+		</action>
+		
+		<action name="queryWarehouseListAction" class="warehouseAction" method="queryWarehouseListAction">
+			<result name="success">/page/warehouse/warehouselist.jsp</result>
+		</action>
+		
+		<action name="turnWarehouseListAction" class="warehouseAction" method="turnWarehouseListAction">
+			<result name="success">/page/warehouse/warehouselist.jsp</result>
+		</action>
+		
+	</package>
+
+</struts>

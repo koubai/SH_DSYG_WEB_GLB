@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="search" extends="struts-language" namespace="/search">
+	
+		<action name="showSearchAction" class="searchAction" method="showSearchAction">
+			<result name="success">/page/search/condition.jsp</result>
+		</action>
+		
+		<action name="searchConditionAction" class="searchAction" method="searchConditionAction">
+			<result name="*">/page/search/condition.jsp</result>
+		</action>
+		
+		<action name="searchSummaryAction" class="searchAction" method="searchSummaryAction">
+			<result name="*">/page/search/summarylist.jsp</result>
+		</action>
+		
+		<action name="searchListAction" class="searchAction" method="searchListAction">
+			<result name="*">/page/search/searchlist.jsp</result>
+		</action>
+		
+		<action name="showSearchWarehouseAction" class="warehouseSearchAction" method="showSearchWarehouseAction">
+			<result name="*">/page/search/searchwarehouselist.jsp</result>
+		</action>
+		
+		<action name="searchWarehouseListAction" class="warehouseSearchAction" method="searchWarehouseListAction">
+			<result name="*">/page/search/searchwarehouselist.jsp</result>
+		</action>
+		
+	</package>
+
+</struts>

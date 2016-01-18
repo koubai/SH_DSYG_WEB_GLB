@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="managehome" extends="struts-dsyg" namespace="/managehome">
+	
+		<action name="showManageHomeAction" class="manageHomeAction" method="showManageHomeAction">
+			<result name="success">/page/manage/managehome.jsp</result>
+			<result name="*">/page/manage/login.jsp</result>
+		</action>
+		
+	</package>
+
+</struts>

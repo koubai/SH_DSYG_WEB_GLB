@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="recruit" extends="struts-dsyg" namespace="/recruit">
+		
+		<action name="showUpdRecruitAction" class="recruitAction" method="showUpdRecruitAction">
+			<result name="success">/page/recruit/updrecruit.jsp</result>
+		</action>
+		
+		<action name="updRecruitAction" class="recruitAction" method="updRecruitAction">
+			<result name="success">/page/recruit/updrecruit.jsp</result>
+		</action>
+		
+		<action name="showAddRecruitAction" class="recruitAction" method="showAddRecruitAction">
+			<result name="success">/page/recruit/addrecruit.jsp</result>
+		</action>
+		
+		<action name="addRecruitAction" class="recruitAction" method="addRecruitAction">
+			<result name="success">/page/recruit/addrecruit.jsp</result>
+		</action>
+		
+		<action name="delRecruitAction" class="recruitAction" method="delRecruitAction">
+			<result name="success">/page/recruit/recruitlist.jsp</result>
+		</action>
+		
+		<action name="showRecruitAction" class="recruitAction" method="showRecruitAction">
+			<result name="success">/page/recruit/recruitlist.jsp</result>
+		</action>
+		
+		<action name="queryRecruitAction" class="recruitAction" method="queryRecruitAction">
+			<result name="success">/page/recruit/recruitlist.jsp</result>
+		</action>
+		
+		<action name="turnRecruitAction" class="recruitAction" method="turnRecruitAction">
+			<result name="success">/page/recruit/recruitlist.jsp</result>
+		</action>
+		
+	</package>
+
+</struts>

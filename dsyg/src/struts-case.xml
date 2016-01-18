@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="case" extends="struts-dsyg" namespace="/case">
+		
+		<action name="showUpdCaseAction" class="caseAction" method="showUpdCaseAction">
+			<result name="success">/page/case/updcase.jsp</result>
+		</action>
+		
+		<action name="updCaseAction" class="caseAction" method="updCaseAction">
+			<result name="success">/page/case/updcase.jsp</result>
+		</action>
+		
+		<action name="showAddCaseAction" class="caseAction" method="showAddCaseAction">
+			<result name="success">/page/case/addcase.jsp</result>
+		</action>
+		
+		<action name="addCaseAction" class="caseAction" method="addCaseAction">
+			<result name="success">/page/case/addcase.jsp</result>
+		</action>
+		
+		<action name="delCaseAction" class="caseAction" method="delCaseAction">
+			<result name="success">/page/case/caselist.jsp</result>
+		</action>
+		
+		<action name="showCaseAction" class="caseAction" method="showCaseAction">
+			<result name="success">/page/case/caselist.jsp</result>
+		</action>
+		
+		<action name="queryCaseAction" class="caseAction" method="queryCaseAction">
+			<result name="success">/page/case/caselist.jsp</result>
+		</action>
+		
+		<action name="turnCaseAction" class="caseAction" method="turnCaseAction">
+			<result name="success">/page/case/caselist.jsp</result>
+		</action>
+		
+	</package>
+
+</struts>

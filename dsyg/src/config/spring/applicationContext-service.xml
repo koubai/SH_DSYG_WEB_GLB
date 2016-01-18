@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<!-- Qa -->
+	<bean id="qaService" class="com.cn.dsyg.service.impl.QaServiceImpl" >
+		<property name="qaDao">
+			<ref local="qaDao"/>
+		</property>
+	</bean>
+	
+	<bean id="qaDao" class="com.cn.dsyg.dao.impl.QaDaoImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient"/>
+		</property>
+	</bean>
+	
+	<!-- Recruit -->
+	<bean id="recruitService" class="com.cn.dsyg.service.impl.RecruitServiceImpl" >
+		<property name="recruitDao">
+			<ref local="recruitDao"/>
+		</property>
+	</bean>
+	
+	<bean id="recruitDao" class="com.cn.dsyg.dao.impl.RecruitDaoImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient"/>
+		</property>
+	</bean>
+
+	<!-- case -->
+	<bean id="caseService" class="com.cn.dsyg.service.impl.CaseServiceImpl" >
+		<property name="caseDao">
+			<ref local="caseDao"/>
+		</property>
+	</bean>
+	
+	<bean id="caseDao" class="com.cn.dsyg.dao.impl.CaseDaoImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient"/>
+		</property>
+	</bean>
+
+	<!-- warehouse -->
+	<bean id="warehouseService" class="com.cn.dsyg.service.impl.WarehouseServiceImpl" >
+		<property name="warehouseDao">
+			<ref local="warehouseDao"/>
+		</property>
+	</bean>
+	
+	<bean id="warehouseDao" class="com.cn.dsyg.dao.impl.WarehouseDaoImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient"/>
+		</property>
+	</bean>
+
+	<!-- news -->
+	<bean id="newsService" class="com.cn.dsyg.service.impl.NewsServiceImpl" >
+		<property name="newsDao">
+			<ref local="newsDao"/>
+		</property>
+	</bean>
+	
+	<bean id="newsDao" class="com.cn.dsyg.dao.impl.NewsDaoImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient"/>
+		</property>
+	</bean>
+	
+	<!-- product01 -->
+	<bean id="product01Service" class="com.cn.dsyg.service.impl.Product01ServiceImpl" >
+		<property name="product01Dao">
+			<ref local="product01Dao"/>
+		</property>
+		<property name="dict01Dao">
+			<ref local="dict01Dao"/>
+		</property>
+		<property name="warehouseDao">
+			<ref local="warehouseDao"/>
+		</property>
+	</bean>
+	
+	<bean id="product01Dao" class="com.cn.dsyg.dao.impl.Product01DaoImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient"/>
+		</property>
+	</bean>
+
+	<!-- 字典表 -->
+	<bean id="dict01Service" class="com.cn.dsyg.service.impl.Dict01ServiceImpl" >
+		<property name="dict01Dao">
+			<ref local="dict01Dao"/>
+		</property>
+	</bean>
+	
+	<bean id="dict01Dao" class="com.cn.dsyg.dao.impl.Dict01DaoImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient"/>
+		</property>
+	</bean>
+
+	<!-- 用户 -->
+	<bean id="userService" class="com.cn.dsyg.service.impl.UserServiceImpl" >
+		<property name="userDao">
+			<ref local="userDao"/>
+		</property>
+	</bean>
+	
+	<bean id="userDao" class="com.cn.dsyg.dao.impl.UserDaoImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient"/>
+		</property>
+	</bean>
+	
+	<!-- 角色 -->
+	<bean id="roleService" class="com.cn.dsyg.service.impl.RoleServiceImpl" >
+		<property name="roleDao">
+			<ref local="roleDao"/>
+		</property>
+	</bean>
+	
+	<bean id="roleDao" class="com.cn.dsyg.dao.impl.RoleDaoImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient"/>
+		</property>
+	</bean>
+</beans>
