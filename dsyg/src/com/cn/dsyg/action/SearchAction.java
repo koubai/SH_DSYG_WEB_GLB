@@ -160,6 +160,18 @@ public class SearchAction extends BaseAction {
 			} else {
 				featureList = new ArrayList<FeatureDto>();
 			}
+			
+			//替换住友电工
+			if("en".equals(language)) {
+				if(product01List != null && product01List.size() > 0) {
+					for(Product01Dto product : product01List) {
+						if(StringUtil.isNotBlank(product.getItem08())) {
+							product.setItem08(product.getItem08().replace("住友电工", "SUMITUBE"));
+						}
+					}
+				}
+			}
+			
 			//默认选择条件匹配TAB
 			if(!"1".equals(tabIndex) && !"2".equals(tabIndex)) {
 				tabIndex = "1";
@@ -228,9 +240,14 @@ public class SearchAction extends BaseAction {
 				ulCode = "";
 				//汇总图片点击URL参数
 				summaryUrl = "_kw" + keyword + "_p0" + Constants.URL_SUFFIX;
+				
+				//对关键字转化
+				String tmpKeyword = keyword.toLowerCase();
+				tmpKeyword = tmpKeyword.replace("sumitube", "住友电工");
+				
 				product01SummaryList = product01Service.searchProduct01Summary(goodsId, item01Id, item02Id,
 						item03Id, item04Id, item05Id, item06Id, this.getUlCode(), "" + Constants.STATUS_NORMAL,
-						keyword, "" + Constants.ROLE_RANK_OPERATOR);
+						tmpKeyword, "" + Constants.ROLE_RANK_OPERATOR);
 			} else {
 				//什么都不做
 			}
@@ -317,8 +334,13 @@ public class SearchAction extends BaseAction {
 					ulCode = "";
 					//翻页时URL参数
 					listUrl = "_g" + goodsId + "_kw" + keyword;
+					
+					//对关键字转化
+					String tmpKeyword = keyword.toLowerCase();
+					tmpKeyword = tmpKeyword.replace("sumitube", "住友电工");
+					
 					page = product01Service.searchProduct01List(goodsId, item01Id, item02Id, item03Id,
-							item04Id, item05Id, item06Id, this.getUlCode(), "" + Constants.STATUS_NORMAL, keyword,
+							item04Id, item05Id, item06Id, this.getUlCode(), "" + Constants.STATUS_NORMAL, tmpKeyword,
 							"" + Constants.ROLE_RANK_OPERATOR, page, startIndex);
 					product01List = (List<Product01Dto>) page.getItems();
 					page.setStartIndex(startIndex);
@@ -361,6 +383,17 @@ public class SearchAction extends BaseAction {
 				}
 			} else {
 				//什么都不做
+			}
+			
+			//替换住友电工
+			if("en".equals(language)) {
+				if(product01List != null && product01List.size() > 0) {
+					for(Product01Dto product : product01List) {
+						if(StringUtil.isNotBlank(product.getItem08())) {
+							product.setItem08(product.getItem08().replace("住友电工", "SUMITUBE"));
+						}
+					}
+				}
 			}
 		} catch(Exception e) {
 			log.error("searchListAction error:" + e);
