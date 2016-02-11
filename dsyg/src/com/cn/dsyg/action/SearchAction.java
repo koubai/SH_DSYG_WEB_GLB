@@ -409,18 +409,20 @@ public class SearchAction extends BaseAction {
 		startIndex = 0;
 		page = new Page();
 		
-		goodsBaseList = dict01Service.queryGoodsNoOther(PropertiesConfig.getPropertiesValueByKey(Constants.SYSTEM_LANGUAGE));
+//		goodsBaseList = dict01Service.queryGoodsNoOther(PropertiesConfig.getPropertiesValueByKey(Constants.SYSTEM_LANGUAGE));
 		
 		String language = (String) ActionContext.getContext().getSession().get(Constants.SYSTEM_LANGUAGE);
 		if("en".equals(language)) {
 			//英文系统
 			//大分类列表
+			goodsBaseList = dict01Service.queryGoodsNoOther(Constants.SYSTEM_LANGUAGE_E);
 			goodsList = dict01Service.queryGoodsNoOther(Constants.SYSTEM_LANGUAGE_E);
 			//颜色
 			colorList = dict01Service.queryDict01ByFieldcode(Constants.DICT_COLOR_TYPE, Constants.SYSTEM_LANGUAGE_E);
 		} else {
 			//默认读取配置文件
 			//大分类列表
+			goodsBaseList = dict01Service.queryGoodsNoOther(PropertiesConfig.getPropertiesValueByKey(Constants.SYSTEM_LANGUAGE));
 			goodsList = dict01Service.queryGoodsNoOther(PropertiesConfig.getPropertiesValueByKey(Constants.SYSTEM_LANGUAGE));
 			//颜色
 			colorList = dict01Service.queryDict01ByFieldcode(Constants.DICT_COLOR_TYPE, PropertiesConfig.getPropertiesValueByKey(Constants.SYSTEM_LANGUAGE));

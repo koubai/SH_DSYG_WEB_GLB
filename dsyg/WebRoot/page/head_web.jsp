@@ -74,12 +74,12 @@
 			<select id="language" name="language" style="width: 100px;" onchange="changeLanguage();">
 				<s:if test='#session.language == "en"'>
 					<option value="zh">中文</option>
-						<option value="en" selected="selected">English</option>
-					</s:if>
-					<s:else>
-						<option value="zh" selected="selected">中文</option>
-						<option value="en">English</option>
-					</s:else>
+					<option value="en" selected="selected">English</option>
+				</s:if>
+				<s:else>
+					<option value="zh" selected="selected">中文</option>
+					<option value="en">English</option>
+				</s:else>
 			</select>
 		</div>
 	</div>

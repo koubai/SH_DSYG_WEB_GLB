@@ -37,7 +37,7 @@
 				</div>
 				<div class="products">
 					<table width="80%" border="0" cellpadding="0" cellspacing="10">
-`						<tr><s:iterator id="homeGoodsList" value="homeGoodsList" status="st1"><s:if test="#st1.index < 3">
+						<tr><s:iterator id="homeGoodsList" value="homeGoodsList" status="st1"><s:if test="#st1.index < 3">
 							<td width="33.3%">
 								<a href="searchcondition_g<s:property value="code"/>.shtml">
 								<!--

@@ -168,6 +168,7 @@ public class HomeAction extends BaseAction {
 			caseDetailId = "";
 
 			String language = (String) ActionContext.getContext().getSession().get(Constants.SYSTEM_LANGUAGE);
+			System.out.println(language);
 			//大分类列表
 			if("en".equals(language)) {
 				//英文系统
@@ -236,16 +237,16 @@ public class HomeAction extends BaseAction {
 			newsDetailId = "";
 			newsDetail = new NewsDto();
 			
-//			String language = (String) ActionContext.getContext().getSession().get(Constants.SYSTEM_LANGUAGE);
-//			//大分类列表
-//			if("en".equals(language)) {
-//				//英文系统
-//				homeGoodsList = dict01Service.queryGoodsNoOther(Constants.SYSTEM_LANGUAGE_E);
-//			} else {
-//				//默认读取配置文件
-//				homeGoodsList = dict01Service.queryGoodsNoOther(PropertiesConfig.getPropertiesValueByKey(Constants.SYSTEM_LANGUAGE));
-//			}
-			homeGoodsList = dict01Service.queryGoodsNoOther(PropertiesConfig.getPropertiesValueByKey(Constants.SYSTEM_LANGUAGE));
+			String language = (String) ActionContext.getContext().getSession().get(Constants.SYSTEM_LANGUAGE);
+			//大分类列表
+			if("en".equals(language)) {
+				//英文系统
+				homeGoodsList = dict01Service.queryGoodsNoOther(Constants.SYSTEM_LANGUAGE_E);
+			} else {
+				//默认读取配置文件
+				homeGoodsList = dict01Service.queryGoodsNoOther(PropertiesConfig.getPropertiesValueByKey(Constants.SYSTEM_LANGUAGE));
+			}
+//			homeGoodsList = dict01Service.queryGoodsNoOther(PropertiesConfig.getPropertiesValueByKey(Constants.SYSTEM_LANGUAGE));
 			
 			//查询新闻
 			homeNewsList = newsService.queryHomeNews();
