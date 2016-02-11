@@ -278,4 +278,6 @@ h1.ttl{color:#2074bd; font-size:30px; font-family:"微软雅黑"; font-weight:no
 #blue-mat .item{color: #fff;font-size: 21px;text-align: left;padding-bottom: 15px;line-height: 1.5 !important;padding-left: 0px;padding-right: 0px;padding-top: 18px;}
 .caseBox{width: 324px;float: left;}
 .caseBox h2{border-bottom: medium none;border-left: medium none;padding-bottom: 0px;margin: 34px 0px 0px;padding-left: 0px;padding-right: 0px;border-top: medium none;border-right: medium none;padding-top: 0px;}
+.caseBox2{width: 300px;float: left;margin: 0px 5px 0px;}
+.caseBox2 h2{border-bottom: medium none;border-left: medium none;padding-bottom: 0px;margin: 20px 0px 0px 0px;padding-left: 0px;padding-right: 0px;border-top: medium none;border-right: medium none;padding-top: 0px;}
 .fBox_tittle p{ margin:0; padding:0; line-height:30px; font-size:16px; text-indent:2em; color:#333333; font-family:"微软雅黑";}

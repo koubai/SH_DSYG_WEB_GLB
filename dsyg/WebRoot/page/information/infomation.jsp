@@ -55,7 +55,7 @@
 					</div>	</a>						
 				</td>
 
-				<td><a href="#">
+				<td><a href="<c:url value="/home/showInformationDetail5Action.action"></c:url>">
 					<div class="product">
 						<p>線束加工</p>
 						<p class="arial">Wiring Harness</p>
