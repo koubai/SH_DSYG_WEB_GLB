@@ -12,6 +12,7 @@ import com.cn.common.util.Page;
 import com.cn.common.util.PropertiesConfig;
 import com.cn.common.util.StringUtil;
 import com.cn.dsyg.dto.Dict01Dto;
+import com.cn.dsyg.dto.Product01Dto;
 import com.cn.dsyg.dto.WarehouseDto;
 import com.cn.dsyg.service.Dict01Service;
 import com.cn.dsyg.service.WarehouseService;
@@ -167,6 +168,17 @@ public class WarehouseSearchAction extends BaseAction {
 			
 			page = warehouseService.searchWarehouseByPage(productname, producttype, "" + Constants.ROLE_RANK_OPERATOR, page, startIndex);
 			searchWarehouseList = (List<WarehouseDto>) page.getItems();
+			//替换住友电工
+			if("en".equals(language)) {
+				if(searchWarehouseList != null && searchWarehouseList.size() > 0) {
+					for(WarehouseDto warehouseDto : searchWarehouseList) {
+						if(StringUtil.isNotBlank(warehouseDto.getBrand())) {
+							warehouseDto.setBrand(warehouseDto.getBrand().replace("住友电工", "SUMITUBE"));
+						}
+					}
+				}
+			}
+
 			page.setStartIndex(startIndex);
 			this.setStartIndex(page.getStartIndex());
 		} catch(Exception e) {

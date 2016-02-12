@@ -168,7 +168,7 @@ public class HomeAction extends BaseAction {
 			caseDetailId = "";
 
 			String language = (String) ActionContext.getContext().getSession().get(Constants.SYSTEM_LANGUAGE);
-			System.out.println(language);
+//			System.out.println(language);
 			//大分类列表
 			if("en".equals(language)) {
 				//英文系统

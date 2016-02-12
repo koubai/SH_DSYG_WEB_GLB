@@ -46,7 +46,7 @@
 			<ul>
 				<li><a href="home.shtml"><s:text name="home"/></a></li>
 				<li><a href="searchhome.shtml"><s:text name="productinfo"/></a></li>
-				<li><a href="showInformation.shtml"><s:text name="titletchenicalinfo"/></a></li>
+				<li><a href="showInformation.shtml"><s:text name="titletechnicalinfo"/></a></li>
 				<li><a href="companyinfo.shtml"><s:text name="titlecompanyinfo"/></a></li>
 				<li><a href="companynews.shtml"><s:text name="titlecompanynews"/></a></li>
 				<li><a href="qa.shtml"><s:text name="qainfo"/></a></li>
@@ -69,8 +69,8 @@
 		<div class="logo">
 			<a href="home.shtml"></a>			
 		</div>
-		<div class="test fr"><s:text name="testrun"/></div>
-		<div style="float:right; margin-top: 10px;">
+		<!-- <div class="test fr"><s:text name="testrun"/></div> -->
+		<div style="float:right; margin-top: 10px;">CHANGE LANGUAGE: <br>
 			<select id="language" name="language" style="width: 100px;" onchange="changeLanguage();">
 				<s:if test='#session.language == "en"'>
 					<option value="zh">中文</option>
