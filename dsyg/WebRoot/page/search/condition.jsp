@@ -273,12 +273,107 @@
 										<div class="line"></div>
 									</div>
 								</s:if>
-								<s:elseif test='goodsId == "03" || goodsId == "04" || goodsId == "05"'>
+								<s:elseif test='goodsId == "03" || goodsId == "04"'>
 									<div class="search3">
 										<h3><s:text name="retrieval customization"/></h3>
 										<div><img src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>img.png" /></div>
 									</div>
 								</s:elseif>
+								<s:elseif test='goodsId == "05"'>
+								<!--////////// 説明部分 start -->
+									<div class="content">
+										<div class="fBox">
+											<div class="caseBox2">
+												<p><img src="<%=request.getContextPath()%>/images/imgN01.png" /><br><s:text name="infodetail501"/></p>
+												<h2>
+													<!-- <img alt="infodetail501" src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>img5_01.png" width="300" height="181"> -->
+												</h2>
+											</div>
+											<div class="caseBox2">
+												<p><img src="<%=request.getContextPath()%>/images/imgN02.png" /><br><s:text name="infodetail502"/></p>
+												<h2>
+													<!-- <img alt="infodetail502" src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>img5_02.png" width="300" height="181"> -->
+												</h2>
+											</div>
+											<div class="caseBox2">
+												<p><img src="<%=request.getContextPath()%>/images/imgN03.png" /><br><s:text name="infodetail503"/></p>
+												<h2>
+													<!--<img alt="infodetail503" src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>img5_03.png" width="300" height="181"> -->
+												</h2>
+											</div>
+											<div class="clear"></div>
+											<div class="caseBox2">
+												<p><img src="<%=request.getContextPath()%>/images/imgN04.png" /><br/><s:text name="infodetail504"/></p>
+												<h2>
+													<img alt="infodetail504" src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>img5_04.png" width="300" height="181" />
+												</h2>
+											</div>
+											<div class="caseBox2">
+												<p><img src="<%=request.getContextPath()%>/images/imgN05.png" /><br/><s:text name="infodetail505"/></p><br/>
+												<h2>
+													<img alt="infodetail505" src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>img5_05.png" width="300" height="181" />
+												</h2>
+											</div>
+											<div class="caseBox2">
+												<p><img src="<%=request.getContextPath()%>/images/imgN06.png" /><br/><s:text name="infodetail506"/></p>
+												<h2>
+													<img alt="infodetail506" src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>img5_06.png" width="300" height="181" />
+												</h2>
+											</div>
+											<div class="clear"></div>
+											<div class="caseBox2">
+												<p><img src="<%=request.getContextPath()%>/images/imgN07.png" /><br/><s:text name="infodetail507"/></p>
+												<h2>
+													<img alt="infodetail507" src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>img5_07A.png" width="300" height="181" />
+													<img alt="infodetail507" src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>img5_07B.png" width="300" height="181" />
+												</h2>
+											</div>
+											<div class="caseBox2">
+												<p><img src="<%=request.getContextPath()%>/images/imgN08.png" /><br/><s:text name="infodetail508"/></p>
+												<h2>
+													<img alt="infodetail508" src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>img5_08A.png" width="300" height="181" />
+													<img alt="infodetail508" src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>img5_08B.png" width="300" height="181" />
+												</h2>
+											</div>
+											<div class="caseBox2">
+												<p><img src="<%=request.getContextPath()%>/images/imgN09.png" /><br/><s:text name="infodetail509"/></p>
+												<h2>
+													<img alt="infodetail509" src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>img5_09A.png" width="300" height="181" />
+													<img alt="infodetail509" src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>img5_09B.png" width="300" height="181" />
+												</h2>
+											</div>
+											<div class="clear"></div>
+											<div class="caseBox2">
+												<p><img src="<%=request.getContextPath()%>/images/imgN10.png" /><br/><s:text name="infodetail510"/></p>
+												<h2>
+													<!-- <img alt="infodetail510" src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>img5_10.png" width="300" height="181"> -->
+												</h2>
+											</div>
+											<div class="caseBox2">
+												<p><img src="<%=request.getContextPath()%>/images/imgN11.png" /><br/><s:text name="infodetail511"/></p>
+												<h2>
+													<img alt="infodetail511" src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>img5_11.png" width="300" height="181" />
+												</h2>
+											</div>
+											<div class="caseBox2">
+												<p><img src="<%=request.getContextPath()%>/images/imgN12.png" /><br/><s:text name="infodetail512"/></p>
+												<h2>
+													<!-- <img alt="infodetail512" src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>img5_12.png" width="300" height="181"> -->
+												</h2>
+											</div>
+											<div class="clear"></div>
+											<div class="caseBox2">
+												<p><img src="<%=request.getContextPath()%>/images/imgN13.png" /><br/><s:text name="infodetail513"/></p>
+												<h2>
+													<img alt="infodetail513" src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>img5_13.png" width="300" height="181" />
+												</h2>
+											</div>
+											<!--fBox -->
+											<div class="clear"></div>
+										</div>
+									</div>
+								<!--////////// 説明部分 end -->
+								</s:elseif>								
 								<s:elseif test='goodsId == "06"'>
 									<div class="search3">
 										<h3><s:text name="retrieval customization"/></h3>
