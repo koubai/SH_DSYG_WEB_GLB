@@ -153,7 +153,7 @@ function search() {
 							<td width="160"><s:text name="productname"/></td>
 							<td width="120"><s:text name="specifications"/></td>
 							<td width="60"><s:text name="color"/></td>
-							<td width="60"><s:text name="margin"/></td>
+							<!-- <td width="60"><s:text name="margin"/></td> -->
 							<td width="60"><s:text name="unit"/></td>
 							<!-- <td width="70">产地</td> -->
 							<!-- <td width="70"><s:text name="deliveryexpected"/></td> -->
@@ -184,7 +184,7 @@ function search() {
 										</s:if>
 									</s:iterator>
 								</td>
-								<td align="right"><s:property value="item01"/></td>
+								<!-- <td align="right"><s:property value="item01"/></td> -->
 								<td>
 									<s:iterator value="unitList" id="unitList" status="st1">
 										<s:if test="%{unitList[#st1.index].code == searchWarehouseList[#st2.index].res01}">
