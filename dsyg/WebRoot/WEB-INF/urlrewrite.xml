@@ -975,6 +975,11 @@
 	</rule>
 	
 	<rule>
+		<from>^/showInformationDetail7.shtml$</from>
+		<to>/home/showInformationDetail7Action.action</to>
+	</rule>
+
+	<rule>
 		<from>^/pdf_f([^/_]*?).shtml$</from>
 		<to>/home/showPdfAction.action\?pdfFileName=$1</to>
 	</rule>
