@@ -28,22 +28,28 @@
 		<div class="products_info">
 			<table width="80%" border="0" cellpadding="0" cellspacing="10">
 			  <tbody><tr>
-				<td width="33.3%"><a href="<c:url value="/home/showInformationDetail1Action.action"></c:url>">
+				<td width="25%"><a href="<c:url value="/home/showInformationDetail1Action.action"></c:url>">
 					<div class="product">
 						<p>電子線</p>
 						<p class="arial">Electronic Wire</p>
 					</div>		</a>					
 				</td>
-				<td width="33.3%"><a href="<c:url value="/home/showInformationDetail2Action.action"></c:url>">
+				<td width="25%"><a href="<c:url value="/home/showInformationDetail2Action.action"></c:url>">
 					<div class="product">
 						<p>熱収束套管</p>
 						<p class="arial">Heat-Shrink-Tube</p>
 					</div>	</a>						
 				</td>
-				<td width="33.3%"><a href="<c:url value="/home/showInformationDetail1Action.action"></c:url>">
+				<td width="25%"><a href="<c:url value="/home/showInformationDetail1Action.action"></c:url>">
 					<div class="product">
 						<p>柔軟扁平電纜</p>
 						<p class="arial">Flexible Flat Cable</p>
+					</div>	</a>						
+				</td>
+				<td width="25%"><a href="<c:url value="/home/showInformationDetail7Action.action"></c:url>">
+					<div class="product">
+						<p>标识和标签</p>
+						<p class="arial">SumiTag SumiLabel</p>
 					</div>	</a>						
 				</td>
 			  </tr>
@@ -64,8 +70,10 @@
 				<td><a href="<c:url value="/home/showInformationDetail6Action.action"></c:url>">
 					<div class="product">
 						<p>柔軟印刷电路板</p>
-						<p class="arial">Flexible Printed Circuit Board</p>
+						<p class="arial">Flexible Printed Circuit Bd</p>
 					</div>		</a>					
+				</td>
+				<td>
 				</td>
 			  </tr>
 			</tbody></table>

@@ -96,6 +96,9 @@
 			<result name="success">/page/information/infomation_detail6.jsp</result>
 		</action>
 		
+		<action name="showInformationDetail7Action" class="homeAction" method="showInformationDetail7Action">
+			<result name="success">/page/information/infomation_detail7.jsp</result>
+		</action>
 	</package>
 
 </struts>

@@ -370,6 +370,19 @@ public class HomeAction extends BaseAction {
 	}
 	
 	/**
+	 * 相关技术情报7 (标识和标签)
+	 * @return
+	 */
+	public String showInformationDetail7Action() {
+		try {
+			this.clearMessages();
+		} catch(Exception e) {
+			log.error("showInformationDetail7Action error:" + e);
+		}
+		return SUCCESS;
+	}
+	
+	/**
 	 * 在线购买
 	 * @return
 	 */

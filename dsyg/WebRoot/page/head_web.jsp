@@ -51,8 +51,9 @@
 				<li><a href="companynews.shtml"><s:text name="titlecompanynews"/></a></li>
 				<li><a href="qa.shtml"><s:text name="qainfo"/></a></li>
 				<li><a href="case_p01.shtml"><s:text name="casestudy"/></a></li>
-				<li><a href="showsearchsarehouse.shtml"><s:text name="inventory"/></a></li>
-				<li><a href="showOnline.shtml"><s:text name="buyonline"/></a></li>
+				<!-- <li><a href="showsearchsarehouse.shtml"><s:text name="inventory"/></a></li> -->
+				<!-- <li><a href="showOnline.shtml"><s:text name="buyonline"/></a></li> -->
+				<li><a href="../../dsygonline/"><s:text name="buyonline"/></a></li>
 				<!--
 				<li><a href="<c:url value="/home/goHomeAction.action"></c:url>">首页</a></li>
 				<li><a href="<c:url value="/search/showSearchAction.action"></c:url>">产品信息</a></li>
