@@ -1255,6 +1255,10 @@
 	</outbound-rule>
 	
 	<outbound-rule>
+		<from>/home/showInformationDetail7Action.action$</from>
+		<to>/showInformationDetail7.shtml</to>
+	</outbound-rule>
+	<outbound-rule>
 		<from>/home/showInformationDetail6Action.action$</from>
 		<to>/showInformationDetail6.shtml</to>
 	</outbound-rule>
