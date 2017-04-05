@@ -34,14 +34,14 @@
 	<div class="page_main">
 		<div class="page_item">
 			<div class="pro_img">
-				<img src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>news.jpg" alt="<s:text name="news"/>">
+				<img src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>news.jpg" alt="<s:text name="news"/>"></img>
 			</div>
 			<div class="pro_adress">
-				<a href="<%=request.getContextPath()%>/"><s:text name="home"/> </a> &gt; <a href="<%=request.getContextPath()%>/companynews.shtml#"><s:text name="news"/>				
+				<a href="<%=request.getContextPath()%>/"><s:text name="home"/> </a> &gt; <a href="<%=request.getContextPath()%>/companynews.shtml#"><s:text name="news"/></a>				
 			</div>
 		</div>
 		<div class="item_line">
-			<img src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>page_line.jpg">
+			<img src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>page_line.jpg"></img>
 		</div>
 		<div class="pro_content">
 			<div class="pro_list">
@@ -57,7 +57,7 @@
 				</p>
 				<p class="wire_content">
 					<s:if test='newsDetail.pic01 != null && newsDetail.pic01 != ""'>
-					<a href="<s:property value="newsDetail.newsPicUrl"/><s:property value="newsDetail.pic01"/>"><img alt="" src="<s:property value="newsDetail.newsPicUrl"/><s:property value="newsDetail.pic01"/>" >
+					<a href="<s:property value="newsDetail.newsPicUrl"/><s:property value="newsDetail.pic01"/>"><img alt="" src="<s:property value="newsDetail.newsPicUrl"/><s:property value="newsDetail.pic01"/>" ></img>
 </s:if>
 				</p>
 				<div class="newscontent">
