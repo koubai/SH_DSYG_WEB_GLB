@@ -97,6 +97,11 @@
 			pic01 = #pic01#,
 			pic02 = #pic02#,
 			pic03 = #pic03#,
+			res01 = #res01#,
+			res02 = #res02#,
+			res03 = #res03#,
+			res04 = #res04#,
+			res05 = #res05#,
 			updateuid = #updateuid#,
 			updatedate = NOW()
 		where id = #id#

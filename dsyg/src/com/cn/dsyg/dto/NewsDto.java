@@ -78,12 +78,12 @@ public class NewsDto extends BaseDto {
 	private String pic05;
 
 	/**
-	 * 预备项目1
+	 * 预备项目1(页面URL链接1)
 	 */
 	private String res01;
 
 	/**
-	 * 预备项目2
+	 * 预备项目2(页面URL链接2)
 	 */
 	private String res02;
 

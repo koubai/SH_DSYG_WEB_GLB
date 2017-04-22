@@ -68,8 +68,16 @@
 						<s:else>
 							${newsDetail.data}
 						</s:else>
+						<br/>
 					</p>
 				</div>
+				<s:if test='newsDetail.res01 != ""'>					
+				<a href="<s:property value="newsDetail.res01"/>">${newsDetail.res01}</a>
+				</s:if>
+				<br/>
+				<s:if test='newsDetail.res02 != ""'>					
+				<a href="<s:property value="newsDetail.res02"/>">${newsDetail.res02}</a>
+				</s:if>
 			</div>
 			<div class="clear"></div>
 		</div>

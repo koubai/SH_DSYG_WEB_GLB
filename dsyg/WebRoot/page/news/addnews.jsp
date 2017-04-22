@@ -143,6 +143,18 @@
 							</td>
 						</tr>
 						<tr>
+							<td class="td_tittle"><span></span>新闻链接1：</td>
+							<td>
+								<s:textfield name="addNewsDto.res01" id="title" cssStyle="width:500px;" maxlength="300" theme="simple"></s:textfield>
+							</td>
+						</tr>
+						<tr>
+						<tr>
+							<td class="td_tittle"><span></span>新闻链接2：</td>
+							<td>
+								<s:textfield name="addNewsDto.res02" id="title" cssStyle="width:500px;" maxlength="300" theme="simple"></s:textfield>
+							</td>
+						</tr>
 							<td></td>
 							<td>
 								<input class="btn btn-blue" type="button" value="保存" onclick="add();"/>
