@@ -383,6 +383,19 @@ public class HomeAction extends BaseAction {
 	}
 	
 	/**
+	 * 相关技术情报8 (交联含氟树脂)
+	 * @return
+	 */
+	public String showInformationDetail8Action() {
+		try {
+			this.clearMessages();
+		} catch(Exception e) {
+			log.error("showInformationDetail8Action error:" + e);
+		}
+		return SUCCESS;
+	}
+
+	/**
 	 * 在线购买
 	 * @return
 	 */

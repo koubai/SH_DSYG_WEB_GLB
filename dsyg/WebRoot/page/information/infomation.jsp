@@ -73,7 +73,11 @@
 						<p class="arial">Flexible Printed Circuit Bd</p>
 					</div>		</a>					
 				</td>
-				<td>
+				<td><a href="<c:url value="/home/showInformationDetail8Action.action"></c:url>">
+					<div class="product">
+						<p>交联含氟树脂</p>
+						<p class="arial">Bridge-building FEX</p>
+					</div>		</a>					
 				</td>
 			  </tr>
 			</tbody></table>

@@ -99,6 +99,10 @@
 		<action name="showInformationDetail7Action" class="homeAction" method="showInformationDetail7Action">
 			<result name="success">/page/information/infomation_detail7.jsp</result>
 		</action>
+
+		<action name="showInformationDetail8Action" class="homeAction" method="showInformationDetail8Action">
+			<result name="success">/page/information/infomation_detail8.jsp</result>
+		</action>
 	</package>
 
 </struts>

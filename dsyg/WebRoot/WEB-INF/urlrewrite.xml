@@ -980,6 +980,11 @@
 	</rule>
 
 	<rule>
+		<from>^/showInformationDetail8.shtml$</from>
+		<to>/home/showInformationDetail8Action.action</to>
+	</rule>
+
+	<rule>
 		<from>^/pdf_f([^/_]*?).shtml$</from>
 		<to>/home/showPdfAction.action\?pdfFileName=$1</to>
 	</rule>
@@ -1262,6 +1267,10 @@
 	<outbound-rule>
 		<from>/home/showInformationDetail7Action.action$</from>
 		<to>/showInformationDetail7.shtml</to>
+	</outbound-rule>
+	<outbound-rule>
+		<from>/home/showInformationDetail8Action.action$</from>
+		<to>/showInformationDetail8.shtml</to>
 	</outbound-rule>
 	<outbound-rule>
 		<from>/home/showInformationDetail6Action.action$</from>

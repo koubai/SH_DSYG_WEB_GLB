@@ -45,8 +45,8 @@
 		<div class="menu">
 			<ul>
 				<li><a href="home.shtml"><s:text name="home"/></a></li>
-				<li><a href="searchhome.shtml"><s:text name="productinfo"/></a></li>
 				<li><a href="showInformation.shtml"><s:text name="titletechnicalinfo"/></a></li>
+				<li><a href="searchhome.shtml"><s:text name="productinfo"/></a></li>
 				<li><a href="companyinfo.shtml"><s:text name="titlecompanyinfo"/></a></li>
 				<li><a href="companynews.shtml"><s:text name="titlecompanynews"/></a></li>
 				<li><a href="qa.shtml"><s:text name="qainfo"/></a></li>
