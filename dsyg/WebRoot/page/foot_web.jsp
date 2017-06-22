@@ -22,6 +22,9 @@
 		<ul>
 			<li style="padding-left:40px;"><a href="http://www.miitbeian.gov.cn/"><s:text name="icpno"/></a></li>
 		</ul>
+		<ul>
+		 	<li style="padding-left:40px;"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011002002038" style="display:inline-block;text-decoration:none;"><img src="<%=request.getContextPath()%>/images/beian.png" style="float:left;"/><s:text name="beianno"/></a></li>
+		</ul>
 	</div>
 	</td>
 	<td>

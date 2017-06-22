@@ -3,6 +3,14 @@
 <%@ taglib prefix="c" uri="/WEB-INF/c.tld" %>
 <link type="text/css" rel="stylesheet" href="<%=request.getContextPath()%>/css<s:if test='#session.language == "en"'>/style_en.css</s:if><s:else>/style.css</s:else>" />
 <script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?cc24123a5b149a40daa3f4b4a6895b0c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
 	function manageLogout() {
 		//window.location.href = '<c:url value="/manage/manageLogoutAction.action"></c:url>';
 	}
