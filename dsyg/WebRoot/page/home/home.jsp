@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <%@ taglib prefix="c" uri="/WEB-INF/c.tld" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -14,6 +14,29 @@
 <script src="<%=request.getContextPath()%>/js/loopedslider.min.js" type="text/javascript"></script>
 <title><s:text name="dsyg"/>-<s:text name="home"/></title>
 <script type="text/javascript">
+	function IsPC() {
+		var userAgentInfo = navigator.userAgent;
+		var Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+		var flag = true;
+		for (var v = 0; v < Agents.length; v++) {
+			if (userAgentInfo.indexOf(Agents[v]) > 0) {
+				flag = false;
+				break;
+			}
+		}
+		return flag;
+	}
+	
+	function browserRedirect() {
+		//判断是否是PC端
+		if(!IsPC()) {
+			//非PC端，则跳转到H5页面
+			window.location.href="http://www.shdsyg.cn/dsyg_wap/";
+		}
+	}
+	
+	browserRedirect();
+	
 	$(function(){
 		$('#newsSlider').loopedSlider({
 			autoStart: 5000
