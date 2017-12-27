@@ -149,8 +149,8 @@
 										<s:text name="contact"/>								</td>
 									<td class="cap_tab3">
 										<br>									</td>
-									<td class="cap_tab2"><s:text name="tell"/>：0755－23319126－0（<s:text name="switchboard"/>）<br />
-<s:text name="fax"/>：0755－61524200</td>
+									<td class="cap_tab2"><s:text name="tell"/>：0755－23576731（<s:text name="switchboard"/>）<br />
+<s:text name="fax"/>：0755－23576732</td>
 								</tr>
 								<tr>
 									<td class="cap_tab1">
