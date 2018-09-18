@@ -126,9 +126,12 @@
 					<s:text name="companyprofile"/>
 				</p>
 				<p class="basic_rules">
+					<h2>
+					<s:text name="dsygauthorized"/>
+					</h2><br/>
 					<h3>
 					<s:text name="dsyglinian"/>
-					</h3>
+					</h3><br/>
 				</p>
 			  <div class="cap_table">
 					<table class="ke-zeroborder" cellpadding="0" cellspacing="0" border="0" width="660">
