@@ -119,7 +119,7 @@ function search() {
 						<span class="red">*</span><s:text name="explanation"/>：
 						<img src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>instock.png" /><s:text name="existinggoods"/>
 						<img src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>futures.png" /><s:text name="futures"/>
-						<!--img src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>zheng.png" />表示整箱 -->
+						<img src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>zheng.png" /><s:text name="fullruler"/>
 						<img src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>luan.png" /><s:text name="chaosruler"/>
 					</div>
 					<div class="page">
@@ -153,10 +153,10 @@ function search() {
 							<td width="160"><s:text name="productname"/></td>
 							<td width="120"><s:text name="specifications"/></td>
 							<td width="60"><s:text name="color"/></td>
-							<!-- <td width="60"><s:text name="margin"/></td> -->
+							<td width="60"><s:text name="margin"/></td>
 							<td width="60"><s:text name="unit"/></td>
-							<!-- <td width="70">产地</td> -->
-							<!-- <td width="70"><s:text name="deliveryexpected"/></td> -->
+							<td width="70">产地</td>
+							<td width="70"><s:text name="deliveryexpected"/></td>
 							<td width="60"></td>
 						</tr>
 						<s:iterator value="searchWarehouseList" id="searchWarehouseList" status="st2">
@@ -184,7 +184,7 @@ function search() {
 										</s:if>
 									</s:iterator>
 								</td>
-								<!-- <td align="right"><s:property value="item01"/></td> -->
+								<td align="right"><s:property value="item01"/></td>
 								<td>
 									<s:iterator value="unitList" id="unitList" status="st1">
 										<s:if test="%{unitList[#st1.index].code == searchWarehouseList[#st2.index].res01}">
@@ -192,7 +192,6 @@ function search() {
 										</s:if>
 									</s:iterator>
 								</td>
-								<!--
 								<td>
 									<s:iterator value="makeareaList" id="makeareaList" status="st1">
 										<s:if test="%{makeareaList[#st1.index].code == searchWarehouseList[#st2.index].res02}">
@@ -200,11 +199,10 @@ function search() {
 										</s:if>
 									</s:iterator>
 								</td>
-								-->
-								<!-- <td><s:property value="item03"/></td> -->
+								<td><s:property value="item03"/></td>
 								<td>
 									<s:if test='searchWarehouseList[#st2.index].res03 == "1"'><img src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>luan.png" /></s:if>
-									<!--<s:else><img src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>zheng.png" /></s:else>-->
+									<s:else><img src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>zheng.png" /></s:else>
 									<!--<s:if test='searchWarehouseList[#st2.index].res04 == "1"'><img src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>futures.png" /></s:if>-->
 									<s:if test='searchWarehouseList[#st2.index].item01 < 0'><img src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>futures.png" /></s:if>
 									<s:else><img src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>instock.png" /></s:else>
