@@ -184,7 +184,14 @@ function search() {
 										</s:if>
 									</s:iterator>
 								</td>
-								<td align="right"><s:property value="item01"/></td>
+								<td align="right">
+									<s:if test="%{item01 > 0}">
+										<s:property value="item01" />
+									</s:if>
+									<s:else>
+										<s:property value="0" />
+									</s:else>
+								</td>								
 								<td>
 									<s:iterator value="unitList" id="unitList" status="st1">
 										<s:if test="%{unitList[#st1.index].code == searchWarehouseList[#st2.index].res01}">
