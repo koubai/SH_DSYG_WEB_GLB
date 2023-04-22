@@ -103,6 +103,14 @@
 		<action name="showInformationDetail8Action" class="homeAction" method="showInformationDetail8Action">
 			<result name="success">/page/information/infomation_detail8.jsp</result>
 		</action>
+		
+		<action name="showpopproductAction" class="homeAction" method="showpopproductAction">
+			<result name="success">/page/home/popproduct.jsp</result>
+		</action>
+		
+		<action name="showinventoryAction" class="homeAction" method="showinventoryAction">
+			<result name="success">/page/home/showinventory.jsp</result>
+		</action>
 	</package>
 
 </struts>

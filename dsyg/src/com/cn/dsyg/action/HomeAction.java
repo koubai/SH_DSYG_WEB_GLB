@@ -520,6 +520,32 @@ public class HomeAction extends BaseAction {
 	}
 	
 	/**
+	 * 常用产品页面
+	 * @return
+	 */
+	public String showpopproductAction(){		
+		try {
+			this.clearMessages();
+		} catch(Exception e) {
+			log.error("showpopproductAction error:" + e);
+		}
+		return SUCCESS;
+	}	
+	
+	/**
+	 * 库存品页面
+	 * @return
+	 */
+	public String showinventoryAction(){		
+		try {
+			this.clearMessages();
+		} catch(Exception e) {
+			log.error("showinventoryAction error:" + e);
+		}
+		return SUCCESS;
+	}	
+
+	/**
 	 * 数据check
 	 * @param news
 	 * @return
@@ -565,6 +591,19 @@ public class HomeAction extends BaseAction {
 			this.addActionMessage(this.getText("qamailcheck"));
 			return false;
 		}
+		if(StringUtil.isBlank(qa.getVerificationcode())) {
+			this.addActionMessage(this.getText("qaverificationcodecheck"));
+			return false;
+		}
+		String qarand = (String) ActionContext.getContext().getSession().get(Constants.QA_RANDOM);
+		System.out.println("qarand:" + qarand);
+		System.out.println("qa.getVerificationcode():" + qa.getVerificationcode());
+		
+		if(!qa.getVerificationcode().equals(qarand)) {
+			this.addActionMessage("验证码不正确！");
+			return false;
+		}
+
 		return true;
 	}
 	
@@ -735,4 +774,5 @@ public class HomeAction extends BaseAction {
 	public void setRecruitDetail(RecruitDto recruitDetail) {
 		this.recruitDetail = recruitDetail;
 	}
+	
 }

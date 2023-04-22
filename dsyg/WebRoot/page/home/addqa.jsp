@@ -32,6 +32,7 @@ function checkData() {
 	var tell = $("#tell").val().trim();
 	var fax = $("#fax").val().trim();
 	var email = $("#email").val().trim();
+	var verificationcode = $("#verificationcode").val().trim();
 	var tempData = $("#tempData").val();
 	if(title == "") {
 		alert('<s:text name="qatitlecheck"/>');
@@ -81,7 +82,38 @@ function checkData() {
 		$("#email").focus();
 		return false;
 	}
+	if(verificationcode == "") {
+		alert('<s:text name="qaverificationcodecheck"/>');
+		$("#verificationcode").focus();
+		return false;
+	}
 	return true;
+}
+
+/**
+ * 获取验证码
+ * @param obj
+ * @return
+ */
+function changeValidateCode(obj) {
+	//获取当前的时间作为参数，无具体意义
+    var timenow = new Date().getTime();
+    //每次请求需要一个不同的参数，否则可能会返回同样的验证码
+    //这和浏览器的缓存机制有关系，也可以把页面设置为不缓存，这样就不用这个参数了。
+    obj.src='<%=request.getContextPath()%>/index/qarand.action?d='+timenow;
+    return false;
+}
+
+/**
+ * 获取验证码
+ * @param obj
+ * @return
+ */
+function changeValidate(id) {
+	var timenow = new Date().getTime();
+	if(document.getElementById(id) != null) {
+		document.getElementById(id).src='<%=request.getContextPath()%>/index/qarand.action?d='+timenow;
+	}
 }
 </script>
 </head>
@@ -91,7 +123,7 @@ function checkData() {
 	<div class="main">
 		<div class="product_header">
 			<div class="pagekv">
-				<img src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>banner9.png">
+				<img src="<%=request.getContextPath()%><s:if test='#session.language == "en"'>/images_en/</s:if><s:else>/images/</s:else>banner9.png" />
 			</div>
 		</div>
 		<div class="content">
@@ -103,7 +135,7 @@ function checkData() {
 					</div>
 					<br><p><s:text name="qatip"/></p>
 					</br>
-					<table class="input_table" border="0" cellspacing="0" cellpadding="10">
+					<table class="input_tableQA" border="0" cellspacing="0" cellpadding="10">
 						<tr>
 							<td class="td_tittle"><span>*</span><s:text name="title"/>：</td>
 							<td>
@@ -157,11 +189,25 @@ function checkData() {
 							</td>
 						</tr>
 						<tr>
+							<td class="td_tittle"><span>*</span>验证码：</td>
+							<td>
+								<div id="qa_vcode_item" class="form-item" style="display: block;">
+									<div class="form-field">
+										<div class="qa-vcode-text">
+											<input type="text" class="form-text" name="addQaDto.verificationcode" id="verificationcode" maxlength="4" value="<s:property value="addQaDto.verificationcode"/>" />
+											<a id="get_qa_vcode" class="get-qa-vcode" href="javascript:void(0);"><img title="看不清点我" id="randomImg" name="random" src="<c:url value="/index/qarand.action" />" onclick="changeValidateCode(this)" /></a>
+ 										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
 							<td></td>
 							<td>
 								<input class="btn btn-blue" name="" type="button" onclick="add();" value="<s:text name="submit"/>" />						
 							</td>
 						</tr>
+						
 					</table>
 				</s:form>
 			</div>					

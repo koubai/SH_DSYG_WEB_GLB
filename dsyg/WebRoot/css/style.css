@@ -14,7 +14,7 @@ img{ vertical-align:middle; border:none;}
 .content{ width:1000px; margin:0 auto;}
 .banner{ width:1000px; height:800px; background:url(../images/banner.png) no-repeat; position:relative;}
 .menu{ position:absolute; top:50px; left:10px;}
-.menu ul li{ float:left; background:url(../images/arrow.png) 0 2px no-repeat; padding:0 30px 0 15px;}
+.menu ul li{ float:left; background:url(../images/arrow.png) 0 2px no-repeat; padding:0 20px 0 10px;}
 .menu ul li a{ color:#000000; font-family:"宋体"; font-size:14px; font-weight:600;}
 .menu ul li a.cur,.menu ul li a:hover{ color:#2785D6;}
 .logo{ position:absolute; width:240px; height:30px; left:10px; top:5px;}
@@ -281,3 +281,14 @@ h1.ttl{color:#2074bd; font-size:30px; font-family:"微软雅黑"; font-weight:no
 .caseBox2{width: 300px;float: left;margin: 0px 5px 0px;}
 .caseBox2 h2{border-bottom: medium none;border-left: medium none;padding-bottom: 0px;margin: 20px 0px 0px 0px;padding-left: 0px;padding-right: 0px;border-top: medium none;border-right: medium none;padding-top: 0px;}
 .fBox_tittle p{ margin:0; padding:0; line-height:30px; font-size:16px; text-indent:2em; color:#333333; font-family:"微软雅黑";}
+
+.input_tableQA,.input_tableQA tr,.input_tableQA tr td{ border:1px solid #dddddd; border-collapse:collapse;}
+.input_tableQA{ margin:0 auto; width:80%; margin-top:30px;}
+.input_tableQA input[type="text"]{ width:300px; height:20px;}
+.input_tableQA span{ color:red;}
+.input_tableQA td{ line-height:20px;}
+.input_tableQA dl{ margin:0; padding:2px 0; }
+.input_tableQA dl dt{ float:left; height:20px; line-height:20px; width:120px; text-align:right;}
+.input_tableQA img{ width:100px; height:55px;}
+.input_tableQA .date_input input{ width:140px;}
+.input_tableQA .date_input img{ margin:2px; width:16px; height:16px;}

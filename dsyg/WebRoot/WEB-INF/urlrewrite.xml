@@ -13,6 +13,10 @@
 		<from>^/rand.shtml$</from>
 		<to>/index/rand.action</to>
 	</rule>
+	<rule>
+		<from>^/qarand.shtml$</from>
+		<to>/index/qarand.action</to>
+	</rule>
 	
 	<rule>
 		<from>^/managelogin.shtml$</from>
@@ -243,8 +247,19 @@
 		<from>^/showsearchsarehouse.shtml$</from>
 		<to>/search/showSearchWarehouseAction.action</to>
 	</rule>
+
+	<rule>
+		<from>^/showpopproduct.shtml$</from>
+		<to>/home/showpopproductAction.action</to>
+	</rule>
 	
 	<rule>
+		<from>^/showinventory.shtml$</from>
+		<to>/home/showinventoryAction.action</to>
+	</rule>
+
+	
+	<!-- <rule>
 		<from>^/searchwarehouse_g([0-9]+)_name([^/_]*?)_p([0-9]+).shtml$</from>
 		<to>/search/searchWarehouseListAction.action\?producttype=$1&amp;productname=$2&amp;startIndex=$3</to>
 	</rule>
@@ -267,7 +282,8 @@
 	<rule>
 		<from>^/searchwarehouse_p([0-9]+).shtml$</from>
 		<to>/search/searchWarehouseListAction.action\?startIndex=$1</to>
-	</rule>
+	</rule> 
+	 -->
 	
 		<rule>
 		<from>^/searchsummary.shtml$</from>
@@ -1260,6 +1276,16 @@
 	</outbound-rule>
 	
 	<outbound-rule>
+		<from>/home/showpopproduct.action$</from>
+		<to>/showpopproduct.shtml</to>
+	</outbound-rule>
+
+	<outbound-rule>
+		<from>/home/showinventoryAction.action$</from>
+		<to>/showinventory.shtml</to>
+	</outbound-rule>
+	
+	<outbound-rule>
 		<from>/home/showPdfAction.action\?pdfFileName=([^/_]*?)$</from>
 		<to>/pdf_f$1.shtml</to>
 	</outbound-rule>
@@ -1977,7 +2003,7 @@
 		<to>/searchsummary.shtml</to>
 	</outbound-rule>
 	
-	<outbound-rule>
+	<!-- <outbound-rule>
 		<from>/search/searchWarehouseListAction.action\?startIndex=([0-9]+)$</from>
 		<to>/searchwarehouse_p$1.shtml</to>
 	</outbound-rule>
@@ -2001,7 +2027,8 @@
 		<from>/search/searchWarehouseListAction.action\?producttype=([0-9]+)&amp;productname=([^/_]*?)&amp;startIndex=([0-9]+)$</from>
 		<to>/searchwarehouse_g$1_name$2_p$3.shtml</to>
 	</outbound-rule>
-	
+	 -->
+	 
 	<outbound-rule>
 		<from>/search/showSearchWarehouseAction.action$</from>
 		<to>/showsearchsarehouse.shtml</to>
@@ -2235,6 +2262,11 @@
 	<outbound-rule>
 		<from>/index/rand.action$</from>
 		<to>/rand.shtml</to>
+	</outbound-rule>
+
+	<outbound-rule>
+		<from>/index/qarand.action$</from>
+		<to>/qarand.shtml</to>
 	</outbound-rule>
 	
 	<outbound-rule>

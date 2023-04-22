@@ -112,6 +112,12 @@ public class QaDto extends BaseDto {
 	 */
 	private String updatedate;
 
+	/**
+	 * 登录验证码
+	 */
+	private String verificationcode;
+	
+	
 	public String getId() {
 		return id;
 	}
@@ -271,4 +277,13 @@ public class QaDto extends BaseDto {
 	public void setIp(String ip) {
 		this.ip = ip;
 	}
+	
+	public String getVerificationcode() {
+		return verificationcode;
+	}
+
+	public void setVerificationcode(String verificationcode) {
+		this.verificationcode = verificationcode;
+	}
+
 }

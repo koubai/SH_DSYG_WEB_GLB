@@ -21,6 +21,10 @@ a:hover{text-decoration:underline}
 .form-item .form-field .mobile-vcode-text .form-text{width:105px}
 .mobile-vcode-text img{ vertical-align:middle;}
 .form-item .form-field .mobile-vcode-text .get-mobile-vcode:hover{text-decoration:none;background-color:#e3e3e3;background-image:linear-gradient(to bottom,#e3e3e3,#f5f5f5);background-image:-webkit-linear-gradient(top,#e3e3e3 0,#f5f5f5);background-image:-moz-linear-gradient(top,#e3e3e3,#f5f5f5);background-image:-o-linear-gradient(top,#e3e3e3,#f5f5f5);background-image:-webkit-gradient(linear,0 0,0 100%,from(#e3e3e3),to(#f5f5f5))}
+.form-item .form-field .qa-vcode-text{width:277px;display:inline-block;*display:inline;*zoom:1;vertical-align:middle}
+.form-item .form-field .qa-vcode-text .form-text{width:105px}
+.qa-vcode-text img{ vertical-align:middle;}
+.form-item .form-field .qa-vcode-text .get-qa-vcode:hover{text-decoration:none;background-color:#e3e3e3;background-image:linear-gradient(to bottom,#e3e3e3,#f5f5f5);background-image:-webkit-linear-gradient(top,#e3e3e3 0,#f5f5f5);background-image:-moz-linear-gradient(top,#e3e3e3,#f5f5f5);background-image:-o-linear-gradient(top,#e3e3e3,#f5f5f5);background-image:-webkit-gradient(linear,0 0,0 100%,from(#e3e3e3),to(#f5f5f5))}
 .form-action{padding-left:130px}
 .form-action .register-btn{width:277px}
 .btn{border:0 none;border-radius:3px;color:#fff;cursor:pointer;display:inline-block;font-size:18px;height:40px;text-align:center;*display:inline;*zoom:1;vertical-align:middle}

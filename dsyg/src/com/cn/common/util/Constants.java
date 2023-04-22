@@ -75,6 +75,11 @@ public class Constants {
 	public final static String RANDOM = "random";
 	
 	/**
+	 * 验证码
+	 */
+	public final static String QA_RANDOM = "qarandom";
+	
+	/**
 	 * 是否登录
 	 */
 	public final static String SESSION_ISLOGIN = "is_login";

@@ -122,6 +122,9 @@
 	<!-- 验证码 -->
 	<bean id="randomActionBean" class="com.cn.dsyg.action.ValidateCodeAction" />
 	
+	<!-- QA 验证码 -->
+	<bean id="qarandomActionBean" class="com.cn.dsyg.action.ValidateCodeQAAction" />
+	
 	<!-- 登录拦截器 -->
 	<bean id="loginInterceptorBean" class="com.cn.dsyg.interceptor.LoginInterceptor"/>
 	
